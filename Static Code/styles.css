@@ -1,0 +1,550 @@
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #8194ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: flex-start;
+}
+
+/* Top bar styling */
+.top-bar .site-title {
+    background-color: #ffffff;
+    color: rgb(202, 188, 255);
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.top-bar .signin {
+    background-color: #ffffff;
+    color: rgb(202, 188, 255);
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.top-bar .register {
+    background-color: #ffffff;
+    color: rgb(202, 188, 255);
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.content .home .Video{
+    margin-top: 250px;
+    margin-left: 10px;
+    width: 500px;
+    height: auto;
+}
+
+.signin h1 {
+    font-size: 20px; 
+}
+
+.top-bar .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 850px;
+}
+
+.top-bar nav {
+    display: flex;
+    margin-right: 10px;
+}
+
+.top-bar nav a {
+    color: rgb(202, 188, 255);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+.buttons {
+    margin-top: 20px; /* Space above the buttons */
+    text-align: right; /* Align buttons to the right */
+    margin-right: 400px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:active {
+    background-color: #004080; /* Even darker blue when active */
+}
+/* Adjust the top margin for content to avoid overlap with the top bar */
+.content .home h1 {
+    margin-top: -200px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 550px;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.content .Journal{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.Journal h1{
+    margin-bottom: 30px;
+}
+
+.content .home p {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    margin-left: 550px;
+    color: #ffffff;
+    margin-top: -30px;
+    font-size: 30px;
+}
+
+.content .signin {
+    margin-top: 120px;
+}
+
+
+.content .register {
+    margin-top: 120px;
+}
+
+.register h1 {
+    font-size: 20px; 
+}
+
+
+/* Centering form wrappers */
+.form-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px; /* Adjust based on layout needs */
+}
+
+#registration-panel,
+#signin-panel {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+#registration-form,
+#signin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#registration-form label,
+#signin-form label {
+    margin: 10px 0 5px;
+}
+
+#registration-form input,
+#signin-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+/* Styles for the sign-up prompt */
+.signup-prompt {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-prompt p {
+    margin: 0;
+}
+
+.signup-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+/* Error and success message styling */
+#error-message, #success-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Admin panel styling */
+#admin-panel {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+button {
+    margin-top: 20px;
+}
+
+/* Logo styling */
+.logo {
+    width: 50px;
+    height: auto; 
+}
+
+/* Admin panel styling */
+#admin-panel {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* List styling */
+#user-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+#user-list li {
+    background: #f7f7f7;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Button styling */
+#clear-users-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#clear-users-button:hover {
+    background-color: #c82333;
+}
+
+#clear-users-button:active {
+    background-color: #bd2130;
+}
+
+/* Journal Page Specific Styles */
+#journal-prompt {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#entry {
+    width:800px;
+    height: 300px;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#save-entry-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#save-entry-button:hover {
+    background-color: #0056b3;
+}
+
+/* Top bar styling */
+.top-bar {
+    background-color: #ffffff;
+    color: #007bff;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.top-bar nav a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.top-bar nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main content styles */
+.container {
+    width: 60%; /* Reduced width */
+    text-align: center;
+    margin: 20px auto; /* Margin for spacing around the container */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.forum-title {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 900px;
+    margin-bottom: 10px;
+    
+}
+
+.forum-divider {
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+
+.forum-content {
+    margin-right: 20px;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    widows: 80%;
+}
+
+.forum {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    margin-top: 80px;
+}
+
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    margin: 0;
+}
+
+#new-post-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+#new-post-form input, #new-post-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#new-post-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+.problem-statement {
+    text-align: left;
+    margin: 20px auto;
+}
+
+.problem-statement h2 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.problem-statement p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.Contact{
+    margin-top: 100px;
+}

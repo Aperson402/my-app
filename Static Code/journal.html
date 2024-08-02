@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journaling Prompt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="site-title">
+      <img src="https://cdn.glitch.global/09bdea9b-a200-47ce-b9b7-48db8d63746a/logo.png?v=1722353348648" alt="MindConnect Logo" class="logo">
+      <nav>
+        <a href="home.html">Home</a> ┃ 
+        <a href="signin.html">Forum</a> ┃ 
+        <a href="journal.html">Journal</a> ┃ 
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main content section -->
+  <div class="content">
+      <div class="Journal">
+        <h1>Today's Journaling Prompt</h1>
+        <div class="prompt" id="prompt"></div>
+        <div class="entry">
+        <textarea id="entry" placeholder="Start writing your thoughts here..."></textarea>
+        </div>
+        <button id="save-entry-button" onclick="saveEntry()">Save Entry</button>
+    </div>
+    </div>
+  <script src="journal.js"></script>
+</body>
+</html>
