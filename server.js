@@ -4,7 +4,6 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 3000; // Use environment port if available
 
 // Middleware setup
 app.use(cors());
