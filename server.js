@@ -4,16 +4,15 @@ const cors = require('cors');
 const bcrypt = require('bcrypt');
 const path = require('path');
 const app = express();
+const port = 3000;
 
-// Middleware setup
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, 'Static Code'))); // Serve static files from 'Static Code' directory
+app.use(express.static(path.join(__dirname, 'Static Code')));
 
 const users = {}; 
 let posts = [];
 
-// Authentication middleware
 const authMiddleware = (req, res, next) => {
     const { username, password } = req.body;
     if (username === 'admin' && password === 'adminpassword') {
@@ -23,7 +22,6 @@ const authMiddleware = (req, res, next) => {
     }
 };
 
-// Routes
 app.post('/register', (req, res) => {
     const { username, password } = req.body;
     if (users[username]) {
@@ -60,6 +58,7 @@ app.get('/list-users', (req, res) => {
     res.json(Object.keys(users));
 });
 
+
 app.post('/clear-users', authMiddleware, (req, res) => {
     for (let user in users) {
         delete users[user];
@@ -94,7 +93,6 @@ app.post('/clear-posts', authMiddleware, (req, res) => {
     res.json({ success: true, message: 'All posts have been cleared.' });
 });
 
-// Start the server
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
